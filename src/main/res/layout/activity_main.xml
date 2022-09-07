@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        >
+
+        <Spinner
+            android:id="@+id/idMASpinnerBTPairedDevices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></Spinner>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <Button
+                android:id="@+id/idMAButtonConnect"
+                android:text="Connect"
+                android:layout_width="match_parent"
+                android:background="@drawable/connect_button"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="48"
+        android:orientation="horizontal">
+
+
+        <ScrollView
+            android:id="@+id/idMAmyscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/idMATextViewScrollReceivedMessages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+
+
+        <SeekBar
+            android:id="@+id/seekBarRed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="255"
+            android:thumbTint="#E91E63"
+            android:progressTint="#E91E63"
+            android:layout_weight="14" />
+
+        <TextView
+            android:id="@+id/tvRedSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:textSize="18dp"
+            android:text="0%"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+
+        <SeekBar
+            android:id="@+id/seekBarGreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:thumbTint="#44FF00"
+            android:progressTint="#44FF00"
+            android:max="100"
+            android:layout_weight="14" />
+        <TextView
+            android:id="@+id/tvGreenSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:textSize="18dp"
+            android:text="0%"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+
+
+
+
+
+        <SeekBar
+            android:id="@+id/seekBarYellow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:thumbTint="#2196F3"
+            android:progressTint="#2196F3"
+            android:max="180"
+            android:layout_weight="14" />
+        <TextView
+            android:id="@+id/tvYellowSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:textSize="18dp"
+            android:text="0&#xb0;"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".75"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/idMAButtonStoreData1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/login"
+                android:text="LOGIN"></Button>
+
+            <Button
+                android:id="@+id/idMAButtonStoreData2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="30"
+
+                android:background="@drawable/login"
+                android:text="REGISTER"></Button>
+
+            <Button
+                android:id="@+id/idMAButtonStoreData3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+                android:background="@drawable/login"
+
+                android:text="LOG OUT"></Button>
+
+            <Button
+                android:id="@+id/idMAButtonStoreData4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="25"
+
+                android:background="@drawable/clear"
+                android:text="CLR"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/idMAButtonStoreData6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/button_shape"
+                android:text="LED"></Button>
+
+
+
+            <Button
+                android:id="@+id/idMAButtonStoreData8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/green_button"
+                android:text="LED"></Button>
+
+            <Button
+                android:id="@+id/idMAButtonStoreData9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="60"
+                android:background="@drawable/smart_button"
+                android:text="SMART DOOR"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7">
+
+                <EditText
+                    android:id="@+id/idMAEditTextSendMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3">
+
+                <Button
+                    android:id="@+id/idMAButtonSendData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/send_button"
+                    android:text="Send"
+                    android:textColor="@color/white"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
